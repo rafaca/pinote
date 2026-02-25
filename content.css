@@ -1,0 +1,15 @@
+/* Minimal content styles — hover highlight and cursor */
+/* Most UI lives in Shadow DOM (content.js) */
+
+body.sa-active {
+  cursor: url('icons/cursor.png') 16 16, crosshair !important;
+}
+
+body.sa-active * {
+  cursor: url('icons/cursor.png') 16 16, crosshair !important;
+}
+
+.sa-hover-highlight {
+  outline: 2px solid #fced1e !important;
+  outline-offset: 1px;
+}

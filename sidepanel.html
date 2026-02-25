@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PINOTE</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <header class="sp-header">
+    <div class="sp-url" id="pageUrl">No page active</div>
+    <div class="sp-count" id="annotationCount">0 annotations</div>
+  </header>
+
+  <main class="sp-list" id="annotationList">
+    <div class="sp-empty" id="emptyState">
+      <p>No annotations yet.</p>
+      <p class="sp-hint">Click any element on the page to annotate it.</p>
+    </div>
+  </main>
+
+  <footer class="sp-footer">
+    <div class="sp-footer-row sp-footer-utils">
+      <button class="sp-btn sp-btn-small" id="exportMd" title="Copy Markdown to clipboard">
+        Copy Markdown
+      </button>
+      <button class="sp-btn sp-btn-small sp-btn-danger" id="clearAll" title="Clear all annotations on this page">
+        Clear All
+      </button>
+    </div>
+    <p class="sp-footer-hint">Paste the copied Markdown into Claude to process your annotations.</p>
+    <div class="sp-toast" id="toast"></div>
+  </footer>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
